@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import CardData from "./CardData";
 
 const SearchData = () => {
   const [APIData, setAPIData] = useState([]);
@@ -77,7 +76,7 @@ const SearchData = () => {
                     alt={item.name}
                   />
                 </div>
-                <div className="flex flex-col ml-4">
+                <div className="flex flex-col ml-4 mt-5">
                   <h2 className="font-bold text-lg my-2">{item.name}</h2>
                   <p className="text-gray-600 text-sm">{item.description}</p>
                 </div>
