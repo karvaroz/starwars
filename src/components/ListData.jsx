@@ -17,7 +17,7 @@ const ListData = () => {
   }, []);
 
   return (
-    <div className="container m-auto mt-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-10 mb-4">
+    <div className="m-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-10 mb-4">
       {data.map((item) => (
         <CardData key={item.id} {...item} />
       ))}
